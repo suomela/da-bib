@@ -1,0 +1,55 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{fullpage,microtype,cite,enumitem,xcolor}
+\setlist{noitemsep}
+\definecolor{myblue}{HTML}{0088cc}
+\usepackage[colorlinks,citecolor=myblue,urlcolor=myblue]{hyperref}
+
+\begin{document}
+\section{Models of distributed computing}
+\begin{itemize}
+    \item LOCAL model \cite{linial-1992-locality-in-distributed-graph-algorithms,peleg-2000-distributed-computing-a-locality-sensitive}
+    \item SLOCAL model \cite{ghaffari-kuhn-maus-2017-on-the-complexity-of-local}
+    \item Deterministic dynamic-LOCAL model \cite{akbari-eslami-etal-2023-locality-in-online-dynamic}
+    \item Deterministic online-LOCAL model \cite{akbari-eslami-etal-2023-locality-in-online-dynamic}
+    \item Randomized online-LOCAL model \cite{akbari-coiteux-roy-etal-2025-online-locality-meets}
+    \item Quantum-LOCAL model \cite{gavoille-kosowski-markiewicz-2009-what-can-be-observed,arfaoui-fraigniaud-2014-what-can-be-computed-without}
+    \item Finitely dependent distributions \cite{burton-goulet-meester-1993-on-1-dependent-processes-and,holroyd-liggett-2016-finitely-dependent-coloring}, bounded-dependence model \cite{akbari-coiteux-roy-etal-2025-online-locality-meets}
+    \item Non-signaling distributions = NS-LOCAL = physical locality = $\phi$-LOCAL \cite{gavoille-kosowski-markiewicz-2009-what-can-be-observed,arfaoui-fraigniaud-2014-what-can-be-computed-without}
+    \item CONGEST model \cite{peleg-2000-distributed-computing-a-locality-sensitive}
+    \item Port-numbering model \cite{angluin-1980-local-and-global-properties-in-networks-of}, for other weak models see e.g.\ \cite{hella-jarvisalo-etal-2015-weak-models-of-distributed}
+\end{itemize}
+
+\section{Problem families}
+\begin{itemize}
+    \item LCL problems \cite{naor-stockmeyer-1995-what-can-be-computed-locally}
+    \item Round Eliminator formalism = node and edge constraints = black and white constraints \cite{olivetti-2020-brief-announcement-round-eliminator-a,olivetti-2025-round-eliminator-a-tool-for-automatic}
+    \item Binary labeling problems \cite{balliu-brandt-etal-2020-classification-of-distributed}
+\end{itemize}
+
+\section{Problems}
+\begin{itemize}
+    \item Weak 2-coloring \cite{naor-stockmeyer-1995-what-can-be-computed-locally}
+    \item Sinkless orientation \cite{brandt-fischer-etal-2016-a-lower-bound-for-the}
+\end{itemize}
+
+\section{Algorithmic techniques}
+\begin{itemize}
+    \item Cole--Viskin algorithm for 3-coloring cycles \cite{cole-vishkin-1986-deterministic-coin-tossing-with,goldberg-plotkin-shannon-1988-parallel-symmetry}
+    \item Naor--Stockmeyer algorithm for 3-coloring cycles \cite{naor-stockmeyer-1995-what-can-be-computed-locally}
+    \item Linial's algorithm for coloring graphs \cite{linial-1992-locality-in-distributed-graph-algorithms}
+    \item Network decompositions \cite{awerbuch-goldberg-etal-1989-network-decomposition-and,rozhon-ghaffari-2020-polylogarithmic-time-deterministic}
+\end{itemize}
+
+\section{Lower bound techniques}
+\begin{itemize}
+    \item Linial's lower bound \cite{linial-1992-locality-in-distributed-graph-algorithms}, randomized version \cite{naor-1991-a-lower-bound-on-probabilistic-algorithms-for}
+    \item Round elimination \cite{brandt-2019-an-automatic-speedup-theorem-for,brandt-fischer-etal-2016-a-lower-bound-for-the}, Round Eliminator tool \cite{olivetti-2020-brief-announcement-round-eliminator-a,olivetti-2025-round-eliminator-a-tool-for-automatic}
+    \item Ramsey-style arguments \cite{naor-stockmeyer-1995-what-can-be-computed-locally,czygrinow-hanckowiak-wawrzyniak-2008-fast-distributed}
+    \item KMW \cite{kuhn-moscibroda-wattenhofer-2004-what-cannot-be,kuhn-moscibroda-wattenhofer-2006-the-price-of-being,kuhn-moscibroda-wattenhofer-2016-local-computation,coupette-lenzen-2021-a-breezing-proof-of-the-kmw-bound}
+    \item Derandomization \cite{naor-stockmeyer-1995-what-can-be-computed-locally,chang-kopelowitz-pettie-2019-an-exponential-separation,dahal-d-amore-etal-2023-brief-announcement-distributed}
+    \item Covering maps \cite{angluin-1980-local-and-global-properties-in-networks-of,yamashita-kameda-1996-computing-on-anonymous-networks}
+\end{itemize}
+
+\bibliographystyle{alphaurl}
+\bibliography{da}
+\end{document}
