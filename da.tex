@@ -35,15 +35,16 @@
     \item Sinkless orientation \cite{brandt-fischer-etal-2016-a-lower-bound-for-the}
 \end{itemize}
 
-\section{Algorithmic techniques}
+\section{Algorithms}
 \begin{itemize}
     \item Cole--Viskin algorithm for 3-coloring cycles \cite{cole-vishkin-1986-deterministic-coin-tossing-with,goldberg-plotkin-shannon-1988-parallel-symmetry}
     \item Naor--Stockmeyer algorithm for 3-coloring cycles \cite{naor-stockmeyer-1995-what-can-be-computed-locally}
-    \item Linial's algorithm for coloring graphs \cite{linial-1992-locality-in-distributed-graph-algorithms}
+    \item Vertex coloring with $O\Delta^2$ colors \cite{linial-1992-locality-in-distributed-graph-algorithms}
+    \item Vertex coloring with $\Delta+1$ colors \cite{maus-tonoyan-2022-linial-for-lists,barenboim-elkin-goldenberg-2022-locally-iterative}
     \item Network decompositions \cite{awerbuch-goldberg-etal-1989-network-decomposition-and,rozhon-ghaffari-2020-polylogarithmic-time-deterministic}
 \end{itemize}
 
-\section{Lower bound techniques}
+\section{Lower bounds}
 \begin{itemize}
     \item Linial's lower bound \cite{linial-1992-locality-in-distributed-graph-algorithms}, randomized version \cite{naor-1991-a-lower-bound-on-probabilistic-algorithms-for}
     \item Round elimination \cite{brandt-2019-an-automatic-speedup-theorem-for,brandt-fischer-etal-2016-a-lower-bound-for-the}, Round Eliminator tool \cite{olivetti-2020-brief-announcement-round-eliminator-a,olivetti-2025-round-eliminator-a-tool-for-automatic}
@@ -51,6 +52,13 @@
     \item KMW \cite{kuhn-moscibroda-wattenhofer-2004-what-cannot-be,kuhn-moscibroda-wattenhofer-2006-the-price-of-being,kuhn-moscibroda-wattenhofer-2016-local-computation,coupette-lenzen-2021-a-breezing-proof-of-the-kmw-bound}
     \item Derandomization \cite{naor-stockmeyer-1995-what-can-be-computed-locally,chang-kopelowitz-pettie-2019-an-exponential-separation,dahal-d-amore-etal-2023-brief-announcement-distributed}
     \item Covering maps \cite{angluin-1980-local-and-global-properties-in-networks-of,yamashita-kameda-1996-computing-on-anonymous-networks}
+\end{itemize}
+
+\section{Classification and decidability}
+\begin{itemize}
+    \item Easy for LCLs without inputs on paths \cite{chang-studeny-suomela-2023-distributed-graph-problems,brandt-hirvonen-etal-2017-lcl-problems-on-grids} and trees \cite{balliu-brandt-etal-2022-efficient-classification-of}
+    \item Decidable but PSPACE-hard for LCLs with inputs on paths \cite{balliu-brandt-etal-2019-the-distributed-complexity-of}
+    \item Undecidable for LCLs without inputs in grids \cite{naor-stockmeyer-1995-what-can-be-computed-locally,brandt-hirvonen-etal-2017-lcl-problems-on-grids}
 \end{itemize}
 
 \section{Distributed quantum computing}
