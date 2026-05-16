@@ -8,4 +8,4 @@ File [da.tex](da.tex) contains some commonly-used references (e.g. for definitio
 
 ## Acknowledgements
 
-Maintainer: [Jukka Suomela](https://jukkasuomela.fi). Many of the entries are extracted from [DBLP](https://dblp.org). Thanks to the various coauthors who have helped with collecting these references.
+Maintainer: [Jukka Suomela](https://jukkasuomela.fi). Many of the entries are extracted from [DBLP](https://dblp.org), some of them with further edits and corrections. Thanks to the various coauthors who have helped with collecting these references.
