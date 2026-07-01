@@ -1,4 +1,5 @@
 \documentclass[a4paper,11pt]{article}
+\usepackage[T1]{fontenc}
 \usepackage{fullpage,microtype,cite,enumitem,xcolor}
 \setlist{noitemsep}
 \definecolor{myblue}{HTML}{0088cc}
@@ -8,7 +9,7 @@
 \bibliographystyle{alphaurl}
 
 \begin{document}
-\section{Models of distributed computing}
+\section{Models of network algorithms}
 \begin{itemize}
     \item LOCAL model \cite{linial-1992-locality-in-distributed-graph-algorithms,peleg-2000-distributed-computing-a-locality-sensitive}
     \item SLOCAL model \cite{ghaffari-kuhn-maus-2017-on-the-complexity-of-local}
@@ -24,6 +25,25 @@
     \item LCA model = CentLocal model (shared randomness) \cite{rubinfeld-tamir-etal-2011-fast-local-computation}, VOLUME model (private randomness) \cite{rosenbaum-suomela-2020-seeing-far-vs-seeing-wide-volume}
     \item Supported LOCAL \cite{schmid-suomela-2013-exploiting-locality-in-distributed}
 \end{itemize}
+
+\section{Models of datacenter computing}
+\begin{itemize}
+    \item PRAM model \cite{fortune-wyllie-1978-parallelism-in-random-access}
+    \item BSP model (bulk-synchronous parallel) \cite{valiant-1990-a-bridging-model-for-parallel-computation}
+    \item MapReduce model \cite{dean-ghemawat-2008-mapreduce-simplified-data-processing}
+    \item MPC model (massively parallel computation) \cite{karloff-suri-vassilvitskii-2010-a-model-of-computation,goodrich-sitchinava-zhang-2011-sorting-searching-and,beame-koutris-suciu-2013-communication-steps-for,andoni-nikolov-etal-2014-parallel-algorithms-for}
+    \begin{itemize}
+        \item Adaptive MPC model \cite{behnezhad-dhulipala-etal-2019-massively-parallel}
+        \item Heterogeneous MPC model \cite{fischer-horowitz-oshman-2022-massively-parallel}
+    \end{itemize}
+    \item Congested clique model \cite{lotker-pavlov-etal-2003-mst-construction-in-o-log-log-n}
+    \begin{itemize}
+        \item Node-capacitated clique \cite{augustine-ghaffari-etal-2019-distributed-computation-in}, low-bandwidth model \cite{gupta-hirvonen-etal-2022-sparse-matrix-multiplication}
+        \item Broadcast congested clique \cite{becker-fernandez-anta-etal-2015-brief-announcement-a}
+    \end{itemize}
+    \item $k$-machine model \cite{klauck-nanongkai-etal-2015-distributed-computation-of}
+\end{itemize}
+
 
 \section{Problem families}
 \begin{itemize}
@@ -54,6 +74,7 @@
     \item Vertex coloring with $O(\Delta^2)$ colors \cite{linial-1992-locality-in-distributed-graph-algorithms}
     \item Vertex coloring with $\Delta+1$ colors \cite{maus-tonoyan-2022-linial-for-lists,barenboim-elkin-goldenberg-2022-locally-iterative}
     \item Network decompositions \cite{awerbuch-goldberg-etal-1989-network-decomposition-and}, MPX \cite{miller-peng-xu-2013-parallel-graph-decompositions-using}, MPX for LOCAL \cite{elkin-neiman-2022-distributed-strong-diameter-network}, Rozhoň--Ghaffari \cite{rozhon-ghaffari-2020-polylogarithmic-time-deterministic}
+    \item Lenzen's routing \cite{lenzen-2013-optimal-deterministic-routing-and-sorting}
 \end{itemize}
 
 \section{Lower bounds}
